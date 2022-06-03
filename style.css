@@ -1,17 +1,12 @@
 @font-face {
-  font-family: MontNormal;
-  src: url(./asset/font/Mont-ExtraLightDEMO.otf);
+  font-family: Poppins;
+  src: url(./asset/font/Poppins-Medium.otf);
   font-weight: normal;
-}
-@font-face {
-  font-family: Mont;
-  src: url(./asset/font/Mont-HeavyDEMO.otf);
-  font-weight: bold;
 }
 
 * {
   margin: 0;
-  font-family: Mont;
+  font-family: Poppins;
 }
 
 /* HEADER */
@@ -85,6 +80,12 @@ footer {
   display: flex;
   padding: 30px;
   justify-content: space-evenly;
+  text-align: center;
+}
+
+.recommendation{
+  width: 400px;
+
 }
 
 .img-recommendation{
