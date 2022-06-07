@@ -1,6 +1,7 @@
 
 
   console.log(localStorage.getItem('menu'))
+  var menu = JSON.parse(localStorage.getItem('menu'))
   loadChooseMenu()
   var chooseMenu = []
   function loadChooseMenu(){
