@@ -49,7 +49,30 @@ const historyOrderFood = [
   },
 ]
 
-localStorage.setItem('order', JSON.stringify(historyOrderFood))
+const historyReservation = [
+  {
+      name: "Kezia Gloria",
+      email: "kezia@mail.com",
+      phone: 083742847232,
+      guest: 2,
+      date: "2022-06-02"
+  },{
+      name: "Faustina Odeta",
+      email: "faustin@mail.com",
+      phone: 088493920344,
+      guest: 3,
+      date: "2022-06-06"
+  },{
+      name: "Kevin Robert",
+      email: "kevin@mail.com",
+      phone: 08482940404,
+      guest: 1,
+      date: "2022-05-15"
+  },
+]
+
+
+localStorage.setItem('reservation', JSON.stringify(historyReservation))
 
 function showSlides() {
   let i;
