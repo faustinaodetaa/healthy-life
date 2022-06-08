@@ -185,3 +185,61 @@ footer {
 .about-us-title{
   text-align: center;
 }
+
+.map-container{
+  display: flex;
+  justify-content: center;
+}
+
+.map-img{
+  width: 500px;
+  border-radius: 10px;
+}
+
+.description{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.contact-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-us-title{
+  padding-left: 30px;
+}
+
+.our-contact-container, .our-location-container{
+  padding: 50px 0;
+}
+
+.phone-img{
+  width: 20px;
+}
+
+.email-img{
+  width: 35px;
+}
+
+.contact{
+  display: flex;
+  align-items: center;
+
+}
+
+.contact-txt{
+  margin: 0;
+
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-container{
+  /* text-align: center; */
+  width: 700px;
+}
