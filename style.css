@@ -152,3 +152,36 @@ footer {
   justify-content: space-evenly;
   flex-direction: row;
 }
+
+
+.team-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.our-story-container{
+  width: 500px;
+
+}
+
+.our-goal-container{
+  text-align: justify;
+  width: 500px;
+}
+
+.about-us-content{
+  padding: 50px;
+}
+
+.upper-description-container{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: justify;
+  padding: 30px 0px;
+}
+
+.about-us-title{
+  text-align: center;
+}
