@@ -16,13 +16,18 @@
         const card = template.content.cloneNode(true)
         card.getElementById('name-choose-menu').innerText = menu[index].name
         card.getElementById('desc-choose-menu').innerText = 'IDR ' + menu[index].price
-        card.getElementById('btn-choose-menu').addEventListener('click', () => order(index, document.getElementById("qty-choose-menu").value))
+        card.getElementById('img-choose-menu').setAttribute('src', menu[index].image)
+        card.getElementById('img-choose-menu').setAttribute('alt', menu[index].name)
+        card.getElementById("qty-choose-menu").setAttribute('id', 'qty'+menu[index].name)
+        card.getElementById('btn-choose-menu').addEventListener('click', () => {
+          order(index, document.getElementById('qty'+menu[index].name).value)})
         container.appendChild(card)
     }
   
   }
 
   function order(index, qty){
+    console.log(qty)
     var error = document.getElementById("err-choose-menu")
     var msg = document.getElementById("err-msg-choose-menu")
 

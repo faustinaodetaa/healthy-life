@@ -136,15 +136,20 @@ footer {
   flex-direction: row;
 }
 
-#container-choose-menu{
+#container-choose-menu , #container-menu-food, #container-menu-drink, #container-menu-dessert{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
+  align-content: space-evenly;
 }
 
 #err-choose-menu, #err-order-food{
   margin: 30px;
+}
+
+.card{
+  margin: 20px;
 }
 
 .container-form-reservation{
@@ -242,4 +247,8 @@ form{
 .form-container{
   /* text-align: center; */
   width: 700px;
+}
+
+#tab-menu{
+  justify-content: center;
 }
