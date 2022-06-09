@@ -9,7 +9,6 @@ loadOrderHistory()
   
 
     for (let index in orders) {
-        console.log(orders[index].name)
         const card = template.content.cloneNode(true)
         card.getElementById('row-date').innerText = orders[index].date
         card.getElementById('row-name').innerText = orders[index].name

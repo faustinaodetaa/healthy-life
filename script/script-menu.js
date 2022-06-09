@@ -17,21 +17,31 @@ function loadMenu(){
             card.getElementById('name-menu-food').innerText = menu[index].name
             card.getElementById('desc-menu-food').innerText = 'IDR ' + menu[index].price
             card.getElementById('img-menu-food').setAttribute('src', menu[index].image)
-            // card.getElementById('btn-menu').addEventListener('click', () => order(index, document.getElementById("qty-choose-menu").value))
+            card.getElementById('btn-menu-food').addEventListener('click', () => {
+                console.log('clicked')
+                localStorage.setItem('menuDetail', JSON.stringify(index))
+                location.href = '/menu-detail.html';
+            })
             containerFood.appendChild(card)
         }else if(menu[index].kategori == 'Drink'){
             const card = templateDrink.content.cloneNode(true)
             card.getElementById('name-menu-drink').innerText = menu[index].name
             card.getElementById('desc-menu-drink').innerText = 'IDR ' + menu[index].price
             card.getElementById('img-menu-drink').setAttribute('src', menu[index].image)
-            // card.getElementById('btn-menu').addEventListener('click', () => order(index, document.getElementById("qty-choose-menu").value))
+            card.getElementById('btn-menu-drink').addEventListener('click', () => {
+                localStorage.setItem('menuDetail', JSON.stringify(index))
+                location.href = '/menu-detail.html';
+            })
             containerDrink.appendChild(card)
         }else if(menu[index].kategori == 'Dessert'){
             const card = templateDessert.content.cloneNode(true)
             card.getElementById('name-menu-dessert').innerText = menu[index].name
             card.getElementById('desc-menu-dessert').innerText = 'IDR ' + menu[index].price
             card.getElementById('img-menu-dessert').setAttribute('src', menu[index].image)
-            // card.getElementById('btn-menu').addEventListener('click', () => order(index, document.getElementById("qty-choose-menu").value))
+            card.getElementById('btn-menu-dessert').addEventListener('click', () => {
+                localStorage.setItem('menuDetail', JSON.stringify(index))
+                location.href = '/menu-detail.html';
+            })
             containerDessert.appendChild(card)
         }
     }

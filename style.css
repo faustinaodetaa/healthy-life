@@ -252,3 +252,12 @@ form{
 #tab-menu{
   justify-content: center;
 }
+
+#container-menu-detail{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#menu-detail-desc, #menu-detail-info{
+  width: 500px;
+}

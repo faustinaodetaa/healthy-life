@@ -6,7 +6,6 @@
   var chooseMenu = []
   function loadChooseMenu(){
     chooseMenu = JSON.parse(localStorage.getItem('menu'))
-    console.log(chooseMenu)
     const container = document.getElementById('container-choose-menu')
     const template = document.getElementById('card-choose-menu')
   
