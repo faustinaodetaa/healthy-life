@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
-  <script src="./script/script-reservation.js" defer></script>
+  <script src="./script/contact-us.js" defer></script>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
   <title>Healthy Life</title>
 </head>
@@ -92,15 +93,19 @@
       <form action="">
         Email:
         <input type="text" id="email" placeholder="Enter your email...">
-        <small class="error"></small>
+        <!-- <small class="error"></small> -->
+        <p class="small-txt">
+          By submitting this form I agree to receive daily newsletter and updated from Healthy Life
+        </p>
+        <!-- <small class="error"></small> -->
+
+        <div style="visibility: hidden;" id="err-newsletter" class="alert alert-dismissible alert-danger">
+          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          <strong id="err-msg-newsletter">Error</strong>
+        </div>
   
-        
-        <input type="checkbox" name="" id="">
-        I agree to receive daily newsletter and updates from Healthy Life
-        <small class="error"></small>
-  
-        <div class="center">
-            <input type="submit" value="Submit">
+        <div class="button">
+            <button type="button" id="btn-newsletter" class="btn btn-outline-primary">Submit</button>
             <p id="success"></p>
         </div>
       </form>
