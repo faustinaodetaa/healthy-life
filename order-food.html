@@ -54,40 +54,48 @@
           </div>
         </nav>
       </header>
-    <h2 style="text-align: center;padding-top: 40px;">Order Menu</h2>
-    <div style="visibility: hidden;" id="err-order-food" class="alert alert-dismissible alert-danger">
-        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-        <strong id="err-msg-order-food">Error</strong>
-      </div>
-    <div class="container-form-order">
-        <form action="">
-            <div class="form-group">
-                <label for="user_name" class="form-label mt-4">Name</label>
-                <input type="text" class="form-control" id="user_name" aria-describedby="emailHelp" placeholder="Enter your name">
-            </div>
-            <div class="form-group">
-                <label for="user_email" class="form-label mt-4">Email address</label>
-                <input type="email" class="form-control" id="user_email" aria-describedby="emailHelp" placeholder="Enter your email">
-            </div>
-            <div class="form-group">
-                <label for="user_ohone_number" class="form-label mt-4">Phone Number</label>
-                <input type="text" class="form-control" id="user_phone_number" aria-describedby="emailHelp" placeholder="Enter your phone number">
-            </div>
-            <div class="form-group">
-                <label for="user_address" class="form-label mt-4">Address</label>
-                <textarea class="form-control" id="user_address" rows="3"></textarea>
-            </div>
-        </form>
 
-        <div>
-            <div class="card bg-secondary mb-3" style="max-width: 20rem;">
-                <div class="card-body">
-                    <p id="total-detail" class="card-text">IDR 0</p>
-                    <h4 id="total-price" class="card-title">TOTAL</h4>
+      <div class="content">
+        <h2 style="text-align: center;padding-top: 40px;">Order Menu</h2>
+        <div style="visibility: hidden;" id="err-order-food" class="alert alert-dismissible alert-danger">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <strong id="err-msg-order-food">Error</strong>
+          </div>
+        <div class="container-form-order">
+            <form action="">
+                <div class="form-group">
+                    <label for="user_name" class="form-label mt-4">Name</label>
+                    <input type="text" class="form-control" id="user_name" aria-describedby="emailHelp" placeholder="Enter your name">
                 </div>
-              </div>
-              <button type="button" class="btn btn-primary" id="btn-order-food" >Order</button>
+                <div class="form-group">
+                    <label for="user_email" class="form-label mt-4">Email address</label>
+                    <input type="email" class="form-control" id="user_email" aria-describedby="emailHelp" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="user_ohone_number" class="form-label mt-4">Phone Number</label>
+                    <input type="text" class="form-control" id="user_phone_number" aria-describedby="emailHelp" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="user_address" class="form-label mt-4">Address</label>
+                    <textarea class="form-control" id="user_address" rows="3"></textarea>
+                </div>
+            </form>
+    
+            <div class="lower-form">
+                <div class="card bg-secondary mb-3" style="max-width: 20rem;">
+                    <div class="card-body">
+                        <p id="total-detail" class="card-text">IDR 0</p>
+                        <h4 id="total-price" class="card-title">TOTAL</h4>
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-primary" id="btn-order-food" >Order</button>
+            </div>
         </div>
-    </div>
+
+      </div>
+
+    <footer class="navbar navbar-expand-lg navbar-light bg-light">
+      <h3>Group X - LB11</h3>
+    </footer>
 </body>
 </html>
